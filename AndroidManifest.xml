@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wego"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.wego.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.wego.RunningActivity"> </activity>
+        <activity android:name="com.example.wego.FirstActivity"> </activity>
+        <activity android:name="com.example.wego.PlanActivity"> </activity>
+        <activity android:name="com.example.wego.RunFinishActivity"> </activity>
+        <activity android:name="com.example.wego.RunRecordActivity"> </activity>
+        <activity android:name="com.example.wego.RecordDetailActivity"> </activity>
+        <service android:name="com.example.wego.StepService"/>
+    </application>
+
+</manifest>
